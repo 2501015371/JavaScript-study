@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //创建数组，并赋值给mycars
+        var mycars = new Array('s','v','b');
+        console.log(mycars);
+
+        //也开业不给Array构造函数传递参数，动态添加元素
+        var mycar = new Array();
+        mycar[0] = 's'
+        mycar[1] = 'v'
+        mycar[2] = 'b'
+        mycar[3] = 'n'
+        mycar[4] = 'r'
+        console.log(mycar);
+
+        //是哟个push方法添加元素
+        var a = [];
+        a.push('z');
+        a.push('one' , 'two');
+
+        //pop()方法和shift()方法
+        var a = [1,2.3].pop(); //a值为3 数组为【1.2】
+        var a = [1,2.3].shift(); //a值为1 数组为【2.3】
+
+        //unshiift方法
+        var a = ['zero'];
+        a.unshift('one'); //从头部将one插入进去
+
+        //concat方法
+        var a =['a','b'];
+        var b = ['c','d'];
+        var cou = a.concat(b); //将两个函数链接起来，输出为abcd
+
+        //slice方法从已有的数组返回选定的元素
+        var a = ['a','bv','c'];
+        var b = a.slice(1); //返回的是a
+    </script>
+     <div id="demo"></div>
+     <script>
+         var number = [64,55,54,87,54,32,4];
+         function myfunction(item , index){
+             var demo = document.getElementById('demo')
+             //item 传递的是数组的值，index传递的是索引
+             demo.innerHTML = demo.innerHTML + 'index[' + index + ']' + item +'<br>'
+
+         }
+         number .forEach(myfunction);
+     </script>
+</html>

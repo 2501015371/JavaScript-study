@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var winInnerheight = window.innerHeight;//返回窗口文档显示去的高度
+        var wininnerwidth = window.innerWidth;//返回窗口文档显示区的宽度
+        var winInnerwidth = window.outerWidth;//返回窗口外部高度，包含工具条和滚动条
+        var winInnerheight = window.outerHeight;//返回窗口外部高度，包含工具条和滚动条
+
+        var winScreenleft = window.screenLeft;//返回相对于屏幕窗口的x坐标
+        var winscreentop = window.screenTop;//返回相当屏幕窗口的y坐表
+
+        //setTimeout方法用于在指定毫秒数后调用函数或表达式
+        setTimeout(function(){alert("hello"); },3000);//打开一个窗口三秒后关闭
+        
+        var myvar;
+        function myfunction(){
+            myvar = setTimeout(function(){ alert("hello")} , 3000);
+        }
+        function mystopfunction(){
+            clearTimeout(myvar);
+        }
+    </script>
+</body>
+</html>

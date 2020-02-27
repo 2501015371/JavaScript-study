@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="demo">
+    <span class="demo">hi i'm loen</span>
+</div>
+<p class="demo">This is a paragraph</p>
+<script>
+    var arr = document.getElementsByClassName("demo");
+    //访问第二个元素
+    arr[1].innerHTML = "hi I am peter";
+</script>
+<body>
+    <script>
+        //document对象具有三种方法最常用于选择html元素
+        //通过id找元素
+        document.getElementById(id);
+        //通过类找元素
+        document.getElementsByClassName(name);
+        //通过标签找元素
+        document.getElementsByTagName(name);
+
+        var elem = document.getElementById("demo");
+        eldm.innerHTML = "hello world";
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //js对象是属性变量的容器
+        var person = {
+            name : 'John',
+            age : 31,
+            favcolor : 'green',
+            height : 183
+        }
+        var x = person.age;
+        document.write(x + "<br>");
+        //可以使用。或者【】来跟新对象的属性
+        person.age = 20;
+        document.write(person.age + "<br>");
+
+        //t给person添加属性
+        person.weight = 90;
+        console.log(person)
+
+        //删除对象属性
+        //delete person.height;
+        //console.log(person)
+
+        //js的内置长度属性用于计算机属性或字符串中的字符数
+        var course = {name : 'js' , lessons : 54}
+        console.log(course.name.length);//--->2
+    </script>
+
+   
+</body>
+</html>

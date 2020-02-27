@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFunction(a,b){
+            return a + b;
+        }
+        var res = myFunction(2 , 3);
+        document.write(res + "<br>");
+
+        //函数调用是注意定义的顺序
+        function sayHello(){
+            document.write(arguments[0] + '年龄是：' + arguments[1] + '岁') //隐参调用
+        }
+        sayHello("管江宇" , 20);
+        document.write("<br>");
+
+        //js函数不检查收到的参数数量
+        function sayHello(){
+            document.write(arguments[0] + '年龄是：' + arguments[1] + '岁') //隐参调用
+        }
+        sayHello("管江宇");
+        </script>
+</body>
+</html>

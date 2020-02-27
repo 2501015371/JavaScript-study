@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<form onsubmit="return validate()" mathod ="post">
+    Nuber : <input type="text" name="num1" id="num1" />
+    <br/>
+    Repeat: <input type="text" name="num2" id="num2"/>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
+<script>
+    function validate(){
+        var n1 = document.getElementsByClassName("num1");
+        var n2 = document.getElementsByClassName("num2");
+        if(n1.value != "" && n2.value !=""){
+            if(n1.value == n2.validate){
+                retrun true;
+            }
+        }
+        alert("输入两个值不相等，重新输入");
+        retrun false;
+    }
+    
+</script>
+<body>
+    
+</body>
+</html>

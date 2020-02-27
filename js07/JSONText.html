@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //json实例：定义sites对象，三条网站信息的数组
+        {"sites"[
+            {"name": "baidu", "url":"www.baidu.conm"},
+            {"name": "goole", "url":"www.goole.conm"},
+            {"name": "taobao", "url":"www.taobao.conm"}
+        ]
+    }
+    //json.parse方法用于将一个json字符串转换为对象
+    JSON.parse('{"1":,"2":2,"3":{"4":,"5":{"6":6}}}',function (k,v)){
+        console.log(k);
+        return v;
+    };
+    //Json.stringify方法：用于将j转s值换外json字符串
+    var str = {"name":"baidu","site":"http://www.baidu.com"}
+    str_pretty1 = JSON.stringify(str);
+    document.write("只有一个参数情况："+"<br>");
+    document.write("<pre>" + str_pretty1 +"</pre>"+"<br>");
+
+    str_pretty2 = JSON.stringify(str , null , 4);
+    document.write("只有一个参数情况："+"<br>");
+    document.write("<pre>" + str_pretty2 +"</pre>"+"<br>");//pre用于格式化输出
+
+    </script>
+</body>
+</html>

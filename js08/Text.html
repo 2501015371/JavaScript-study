@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id = "demo">
+        <p>管江宇</p>
+        <p>另一些文本</p>
+    </div>
+    <script>
+        //选择元素的所有子节点更改内容
+        var a = document.getElementById("demo");
+        var arr = a.childNodes;
+        for(var x = 0 ;x <arr.length ; x++){
+            arr[x].innerHTML = "dididi";
+        }
+    </script>
+
+    <div id="demo">管江宇</div>
+    <script>
+        //创建一个新的段落
+        var p =document.createTextNode("加油！");
+        //添加文本到段落
+        p.appendchild(node);
+
+        var div = document.getElementById("demo");
+        //将段落添加到div中
+        div.appendChild(p);
+    </script>
+</body>
+<div id="demo">
+    <p id="p1">这是一个段落</p>
+    <p id="p2">这是另外一个段落</p>
+</div>
+<script>
+    var parent = document.getElementById("demo");
+    var child =document.getElementById("p1");
+    parent.removeChild(child);
+</script>
+
+<div id="demo">
+    <p id="p1">这是一个段落</p>
+    <p id="p2">这是另外一个段落</p>
+</div>
+<script>
+    var p = document.createElement("p");
+    var node = document.createTextNode("这是新的文本");
+    p.appendChild(node);
+
+    var parent = document.getElementById("demo");
+    var child = document.getElementById("p1");
+    parent.removeChild(p,child);
+</script>
+</html>

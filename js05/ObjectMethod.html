@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //使用String对象的toUppercase方法江文本转换为大写
+        var message = 'hello world';
+        var x = message.toUpperCase();
+        document.write(x);
+
+        //方法是对象属性储存的函数。
+        var a = 'age';
+        var myobj = {
+            name  : 'loen',
+            age : '28',
+            eat : function() {
+                return "I'm eating"
+            }
+        }
+        console.log(myobj['name']);
+        console.log(myobj[a]);
+        console.log(myobj['eat']());
+
+        //使用对象构造器来构造对象
+        function person(name , lastname , age , eyecolor){
+            this.name = name;
+            this.lastname = lastname;
+            this.age = age;
+            this.eyecolor = eyecolor;
+        }
+        var myfather = new person('john' , 'doe' , 50 , 'blue');
+        console.log(myfather)
+    </script>
+</body>
+</html>

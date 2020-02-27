@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //象String对定义
+        var txt = new String ("string");
+        //最简单的方式
+        var txt = "string";
+        
+        //String对象方法
+        var str = "Holle nier";
+        var a = str.toUpperCase();//把字符串华为大写
+        var b = str.toLowerCase(); //把字符串华为小写
+        var c = "  Hello world".trim();//去掉字符串两边的空白
+
+        var str = "Hello world ,welcome to the w3cschool";
+        var n = str.indexOf("welcome"); //13
+        var m = str.indexOf("loen"); //-1
+
+        var str = "a b c d e f g";
+        var n = str.replace("a","c");//将字符串中的a换成c
+        var c = str.replace(/c/g,"a");//将字符串中所有c换成a
+
+        var str = "hello world ";
+        str.substring(1,3);//提取1和3中的字符
+    </script>
+    
+</body>
+</html>
